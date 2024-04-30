@@ -31,3 +31,6 @@ let user2: {
     firstName: "Robiul",
     lastName: "Chy" 
 };
+
+user2.middleName = "Hossain";
+console.log(user2);

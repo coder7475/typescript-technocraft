@@ -21,6 +21,9 @@ const user = {
 };
 // Explicit
 let user2 = {
+    company: "Monster Studio",
     firstName: "Robiul",
     lastName: "Chy"
 };
+user2.middleName = "Hossain";
+console.log(user2);
