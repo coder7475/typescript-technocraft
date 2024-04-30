@@ -175,3 +175,20 @@ Initialize typescript config file
 ```bash
 tsc --init
 ```
+
+## Primitive Types & Non Primitive Types
+
+Primitive:
+
+1. number
+2. string
+3. boolean
+4. null
+5. undefined
+6. symbol
+
+Non Primitive:
+
+1. Array 
+2. Tuple
+3. Object
