@@ -22,9 +22,9 @@ const user = {
 }
 // Explicit
 let user2: {
-    firstName: string,
-    middleName?: string, // Optional Type
-    lastName: string
+    firstName: string;
+    middleName?: string; // Optional Type
+    lastName: string;
 } = {
     firstName: "Robiul",
     lastName: "Chy" 

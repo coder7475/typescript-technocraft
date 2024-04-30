@@ -19,3 +19,6 @@ let nai = null;
 let asenai = undefined;
 // 6. Symbol
 let sym = Symbol();
+// Any Type - Off TS = JS
+let x;
+let y;
