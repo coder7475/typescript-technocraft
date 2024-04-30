@@ -12,3 +12,20 @@ let mix: (number | string)[] = ["niaj", 55]; // accepts both string and number
  * * Limit count and type 
  */
 let cord: [number, number] = [1, 4];
+
+// 3. Object
+// Implicit
+const user = {
+    firstName: "Robiul",
+    middleName: "Hossain",
+    lastName: "Chy"
+}
+// Explicit
+let user2: {
+    firstName: string,
+    middleName?: string, // Optional Type
+    lastName: string
+} = {
+    firstName: "Robiul",
+    lastName: "Chy" 
+};
