@@ -150,7 +150,7 @@ See all node version list
 nvm list
 ```
 
-## Install TypeScrip
+## Install TypeScript
 
 install typescript globally using npm
 
