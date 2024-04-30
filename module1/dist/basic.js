@@ -1,23 +1,22 @@
+"use strict";
 // basic data types 
-
 // string 
 // TS Infers own its own - implicit data type 
 let firstName = 'Robiul';
 // Explicit data type
-let lastName: string = "Hossain";
+let lastName = "Hossain";
 // use Infer whenever possible e.g ts can correctly infer type
-
 // Primitive data types
 // 1. Number
-let num: number = 20;
+let num = 20;
 // 2. String
-let myName: string = "Fahad";
+let myName = "Fahad";
 // 3. Boolean
-let isAdmin: boolean = true;
+let isAdmin = true;
 // 4. Null
-let nai: null = null;
+let nai = null;
 // 5. Undefined
-let asenai: undefined = undefined;
+let asenai = undefined;
 // 6. Symbol
-let sym: symbol = Symbol();
+let sym = Symbol();
 console.log(sym);
