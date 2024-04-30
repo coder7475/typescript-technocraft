@@ -22,10 +22,12 @@ const user = {
 }
 // Explicit
 let user2: {
+    company: "Monster Studio"; // type ===> Literal Type
     firstName: string;
     middleName?: string; // Optional Type
     lastName: string;
 } = {
+    company: "Monster Studio",
     firstName: "Robiul",
     lastName: "Chy" 
 };
