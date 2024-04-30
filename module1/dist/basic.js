@@ -19,4 +19,3 @@ let nai = null;
 let asenai = undefined;
 // 6. Symbol
 let sym = Symbol();
-console.log(sym);

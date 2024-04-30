@@ -20,4 +20,7 @@ let nai: null = null;
 let asenai: undefined = undefined;
 // 6. Symbol
 let sym: symbol = Symbol();
-console.log(sym);
+
+// Any Type - Off TS = JS
+let x;
+let y: any;
