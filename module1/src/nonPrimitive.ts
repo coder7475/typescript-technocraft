@@ -22,7 +22,8 @@ const user = {
 }
 // Explicit
 let user2: {
-    company: "Monster Studio"; // type ===> Literal Type
+    // readonly 
+    readonly company: "Monster Studio"; // type ===> Literal Type
     firstName: string;
     middleName?: string; // Optional Type
     lastName: string;
@@ -34,3 +35,4 @@ let user2: {
 
 user2.middleName = "Hossain";
 console.log(user2);
+// user2.company = "ddda"
