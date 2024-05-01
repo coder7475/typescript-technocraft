@@ -18,4 +18,10 @@
     // spread operator ...
     const list = Object.assign(Object.assign({}, mentors), teachers);
     console.log(list);
+    // rest operator -- opposite of spread
+    const greet = (...f) => {
+        // console.log(`Hi ${f1} ${f2} ${f3}`);
+        f.forEach((f) => console.log(`Hi ${f}`));
+    };
+    greet('A', 'B', 'C');
 }
