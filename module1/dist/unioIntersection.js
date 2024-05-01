@@ -7,4 +7,9 @@
         gender: "male",
         blood: 'O'
     };
+    const fullStack = {
+        skills: ["html"],
+        designation1: "fakibazDeveloper",
+        designation2: "backenddev"
+    };
 }
