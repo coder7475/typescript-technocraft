@@ -18,4 +18,23 @@
         gender: "male",
         blood: 'O'
     }
+
+    // Intersection
+    type Frontend = {
+        skills: string[];
+        designation1: FrontendDeveloper
+    }
+
+    type Backend = {
+        skills: string[];
+        designation2: FullStackDev
+    }
+
+    type TrueDeveloper = Frontend & Backend;
+
+    const fullStack: TrueDeveloper = {
+        skills: ["html"],
+        designation1: "fakibazDeveloper",
+        designation2: "backenddev"
+    }
 }
