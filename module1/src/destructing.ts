@@ -13,7 +13,8 @@
         address: "nigeria"
     }
 
-    const { constactNO, name: { middleName } } = usr;
+    const { constactNO, name: { middleName: aliasName } } = usr;
+    console.log(aliasName);
 
 }
 
