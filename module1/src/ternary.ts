@@ -11,4 +11,19 @@
     const res = isAuthen ?? 'Guest';
     const res2 = isAuthen ? isAuthen : "Guest"
     console.log({ res }, { res2});
+
+    // Optional Chaining
+    
+    const usr = {
+        id: 34,
+        name: {
+            firstName: "Hello",
+            middleName: "My",
+            lastName: "World"
+        },
+        constactNO: 445,
+        address: "nigeria"
+    }
+    const designation = usr?.name?.designation  ?? "None"
+    console.log(designation);
 }
