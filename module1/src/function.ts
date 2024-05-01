@@ -3,7 +3,7 @@
  * * Normal Function vs Arrow Function
  */
 // Normal Function
-function add(num1: number, num2: number): number {
+function add(num1: number, num2: number = 10): number {
     return num1 + num2;
 }
 
