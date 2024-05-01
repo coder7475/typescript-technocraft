@@ -220,3 +220,7 @@ const User = {
     }
 }
 ```
+Type alias for function
+```tsx 
+type Add = (num1: number, num2: number) => number;
+```
