@@ -25,4 +25,13 @@
     }
 
     console.log(list);
+
+    // rest operator -- opposite of spread
+    const greet = (...f: string[])=> {
+        // console.log(`Hi ${f1} ${f2} ${f3}`);
+        f.forEach((f: string) => console.log(`Hi ${f}`));
+    }
+
+    greet('A', 'B', 'C')
+
 }
