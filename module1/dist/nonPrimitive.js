@@ -27,3 +27,4 @@ let user2 = {
 };
 user2.middleName = "Hossain";
 console.log(user2);
+// user2.company = "ddda"
