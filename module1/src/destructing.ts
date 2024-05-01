@@ -16,5 +16,12 @@
     const { constactNO, name: { middleName: aliasName } } = usr;
     console.log(aliasName);
 
+
+    // array descrtucturing
+    const friends = ["c", "d", "e"];
+
+    // const [a, b, bestFriend] = friends;
+    // const [, , bestFriend] = friends;
+    const [, b, ...rest] = friends;
 }
 
