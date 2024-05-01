@@ -21,8 +21,12 @@ const std2: Student = {
     contact: 4434
 }
 
+// type alias
+type UserName = string;
+type IsAdmin = boolean;
 
-
+const userName: UserName = "LSD";
+const admin: IsAdmin = true;
 
 
 
