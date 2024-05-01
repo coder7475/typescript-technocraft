@@ -1,6 +1,8 @@
 {
     // Union Type - literat types union
     type FrontendDeveloper = 'fakibazDeveloper' | 'goodDeveloper';
+    type FullStackDev = 'frontendDev' | 'backenddev';
+    type Developer = FrontendDeveloper | FullStackDev;
     const newDev: FrontendDeveloper = "goodDeveloper";
 
     type User = {
