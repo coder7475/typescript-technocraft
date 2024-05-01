@@ -224,3 +224,11 @@ Type alias for function
 ```tsx 
 type Add = (num1: number, num2: number) => number;
 ```
+
+## Install ts-node-dev globally
+
+```bash
+npm i -g ts-node-dev
+```
+
+Run for a ts file
