@@ -232,3 +232,17 @@ npm i -g ts-node-dev
 ```
 
 Run for a ts file
+
+# Type Assertion
+
+Use **as** keyword to assert type
+
+```tsx
+// type assertion
+ let anything: any;
+
+ anything = "Apollo";
+ (anything as string).length;
+
+```
+
