@@ -43,3 +43,13 @@ interface Roll2 {
 
 const roll1: Roll1 = [1, 2, 3];
 const roll2: Roll2 = [1, 2, 3];
+
+// type - interface for function
+type Add = (x: number, y: number) => number;
+interface Sub {
+    (x: number, y: number) : number
+};
+{
+    const add: Add = (x, y) => x + y;
+    const sub: Sub = (x, y) => x + y;
+}
