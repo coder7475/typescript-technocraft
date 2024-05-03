@@ -277,4 +277,11 @@ same as type intersection, extend interface the objects type
   interface UserWithRoleX extends User2 {
     role: string;
   }
+
+  type Roll1 = number[];
+
+  interface Roll2 {
+        [index: number]: number
+  }
+
 ```
