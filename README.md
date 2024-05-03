@@ -246,7 +246,7 @@ Use **as** keyword to assert type
 
 ```
 
-## Type Interface
+## Type Interface: Mainly for Object 
 
 Cousin of **type** 
 
@@ -284,4 +284,13 @@ same as type intersection, extend interface the objects type
         [index: number]: number
   }
 
+  // type - interface for function
+  type Add = (x: number, y: number) => number;
+  interface Sub {
+    (x: number, y: number) : number
+  };
 ```
+
+**Note:**  Use **type** instead of **interface.** 
+
+Overusing interfaces can introduce unnecessary complexity, make code less readable and maintainable, and violate YAGNI.
