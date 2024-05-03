@@ -24,6 +24,6 @@
         constactNO: 445,
         address: "nigeria"
     }
-    const designation = usr?.name?.designation  ?? "None"
-    console.log(designation);
+    // const designation = usr?.namee  ?? "None"
+    // console.log(designation);
 }

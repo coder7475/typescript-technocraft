@@ -15,4 +15,9 @@
         }
     };
     console.log(gerSpeed('1000 km/h2'));
+    // Never Type
+    function throwError(ms) {
+        throw new Error(ms);
+    }
+    throwError('salf afs');
 }

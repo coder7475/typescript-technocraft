@@ -1,5 +1,4 @@
 "use strict";
-var _a, _b;
 {
     // Ternary operator
     const age = 15;
@@ -23,6 +22,6 @@ var _a, _b;
         constactNO: 445,
         address: "nigeria"
     };
-    const designation = (_b = (_a = usr === null || usr === void 0 ? void 0 : usr.name) === null || _a === void 0 ? void 0 : _a.designation) !== null && _b !== void 0 ? _b : "None";
-    console.log(designation);
+    // const designation = usr?.namee  ?? "None"
+    // console.log(designation);
 }
