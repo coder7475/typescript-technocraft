@@ -24,7 +24,7 @@ const user: GenericArr<{ name: string, age: number}> = [
 type GenTuple<X, Y> = [X, Y];
 
 const manus: GenTuple<string, string> = ['x', 'y'];
-const userWithId = [12, { name: "l"}];
+const userWithId = [12, { name: "l"}]
 
 //
 }
