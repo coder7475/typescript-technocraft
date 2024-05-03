@@ -34,3 +34,12 @@
     role: "done",
   };
 }
+// type - interface for array
+type Roll1 = number[];
+
+interface Roll2 {
+    [index: number]: number
+}
+
+const roll1: Roll1 = [1, 2, 3];
+const roll2: Roll2 = [1, 2, 3];
