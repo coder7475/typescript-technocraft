@@ -5,7 +5,7 @@ type Student = {
     name: string;
     age: number;
     gender: string;
-    contact?: number; // oprional
+    contact?: number; // optional
 }
 
 const std1: Student = {
