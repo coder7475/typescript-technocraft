@@ -44,6 +44,22 @@ TypeScript is a free and open-source high-level programming language developed b
         - Intersection
 - Increase your productivity
 - Less Bugs and Less Testing
+## Primitive Types & Non Primitive Types
+
+Primitive:
+
+1. number
+2. string
+3. boolean
+4. null
+5. undefined
+6. symbol
+
+Non Primitive:
+
+1. Array 
+2. Tuple
+3. Object
 
 ## Drawbacks of using Typescript
 
@@ -91,7 +107,7 @@ See all node version list
 nvm list
 ```
 
-## Install TypeScrip
+## Install TypeScript
 
 install typescript globally using npm
 
@@ -175,23 +191,6 @@ Initialize typescript config file
 ```bash
 tsc --init
 ```
-
-## Primitive Types & Non Primitive Types
-
-Primitive:
-
-1. number
-2. string
-3. boolean
-4. null
-5. undefined
-6. symbol
-
-Non Primitive:
-
-1. Array 
-2. Tuple
-3. Object
 
 ## Function
 
