@@ -204,4 +204,48 @@ The `typeAB` will have all properties from both `typeA` and `typeB`.
     }
 ```
 
-dd
+## Ternary(Conditional) operator(?)
+
+The **conditional (ternary) operator** is the only JavaScript operator that takes three operands: a condition followed by a question mark (`?`), then an expression to execute if the condition is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) followed by a colon (`:`), and finally the expression to execute if the condition is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy). This operator is frequently used as an alternative to an `[if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)` statement.
+
+```tsx
+// Ternary operator
+    const age: number = 15;
+    age >= 18 ? console.log("adult") : console.log("Not Adult");
+
+```
+
+## Nullish Coalescing Operator(??)
+
+The **nullish coalescing (`??`)** operator is a logical operator that returns its right-hand side operand when its left-hand side operand is `[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)` or `[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)`, and otherwise returns its left-hand side operand.
+
+```tsx
+// Nullish coalescing Operator
+    // If decision based on Null / Undefined
+    // const isAuthen = ""; - { res: ''}
+    // const isAuthen = null; - { res: "Guest"}
+    const isAuthen = undefined;
+    const res = isAuthen ?? 'Guest';
+    const res2 = isAuthen ? isAuthen : "Guest"
+    console.log({ res }, { res2});
+```
+
+## Optional Chaining Operator (?.)
+
+The **optional chaining (`?.`)** operator accesses an object's property or calls a function. If the object accessed or function called using this operator is `[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)` or `[null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)`, the expression short circuits and evaluates to `[undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)` instead of throwing an error.
+
+```tsx
+const adventurer = {
+  name: 'Alice',
+  cat: {
+    name: 'Dinah',
+  },
+};
+
+const dogName = adventurer.dog?.name;
+console.log(dogName);
+// Expected output: undefined
+
+console.log(adventurer.someNonExistentMethod?.());
+// Expected output: undefined
+```
