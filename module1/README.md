@@ -29,3 +29,41 @@ Type alias for function
 ```tsx 
 type Add = (num1: number, num2: number) => number;
 ```
+## Spread Operator
+
+Spread operator (`...`) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+```tsx
+ const mentors = {
+        types: "M",
+        redxu: "N",
+        dbms: "X"
+    }
+
+    const teachers = {
+        prisma: "Firoz",
+        next: "TOn",
+        cloud: "kl"
+    }
+
+    // spread operator ...
+    const list = {
+        ...mentors,
+        ...teachers
+    }
+```
+
+## Rest Operator
+
+The **rest parameter** syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent [variadic functions](https://en.wikipedia.org/wiki/Variadic_function) in JavaScript.
+
+```tsx
+// rest operator -- opposite of spread
+    const greet = (...f: string[])=> {
+        // console.log(`Hi ${f1} ${f2} ${f3}`);
+        f.forEach((f: string) => console.log(`Hi ${f}`));
+    }
+
+    greet('A', 'B', 'C'
+```
+
