@@ -142,3 +142,66 @@ const add: Add = (num1, num2) => num1 + num2;
 // -----------------
 }
 ```
+## Union Types
+
+**Union types** are used when a value can be more than a single type.
+
+Such as when a property would be `string` or `number`.
+
+```tsx
+// Union Type - literat types union
+    type FrontendDeveloper = 'fakibazDeveloper' | 'goodDeveloper';
+    type FullStackDev = 'frontendDev' | 'backenddev';
+    type Developer = FrontendDeveloper | FullStackDev;
+    const newDev: FrontendDeveloper = "goodDeveloper";
+
+    type User = {
+        name: string;
+        email: string;
+        gender: 'male' | 'female';
+        blood: 'O' | 'A' | 'AB'
+    };
+
+    const ami: User = {
+        email: "roa",
+        name: "Fahad",
+        gender: "male",
+        blood: 'O'
+    }
+```
+
+## Intersection Types
+
+An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types.
+
+To combine types, you use the `&` operator as follows:
+
+```tsx
+type typeAB = typeA & typeB;
+Code language: TypeScript (typescript)
+```
+
+The `typeAB` will have all properties from both `typeA` and `typeB`.
+
+```tsx
+// Intersection
+    type Frontend = {
+        skills: string[];
+        designation1: FrontendDeveloper
+    }
+
+    type Backend = {
+        skills: string[];
+        designation2: FullStackDev
+    }
+
+    type TrueDeveloper = Frontend & Backend;
+
+    const fullStack: TrueDeveloper = {
+        skills: ["html"],
+        designation1: "fakibazDeveloper",
+        designation2: "backenddev"
+    }
+```
+
+dd
