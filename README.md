@@ -199,3 +199,8 @@ npm i -g ts-node-dev
 ```
 
 Run for a ts file
+
+```bash
+ts-node-dev --respawn --transpile-only ./path/name.ts
+```
+
