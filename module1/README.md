@@ -280,3 +280,17 @@ Nullable types allow variables to have either a specific type or **`null`** as a
   console.log(gerSpeed('1000 km/h2' ));
 ```
 
+## Never Type
+
+The never type represents the type of values that never occur. For instance, never is the return type for a function expression or an arrow function expression that always throws an exception or one that never returns. Variables also acquire the type never when narrowed by any type guards that can never be true.
+
+```tsx
+// Never Type
+  function throwError(ms: string):never {
+    throw new Error(ms);
+  }
+
+  throwError('salf afs');
+}
+```
+
