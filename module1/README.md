@@ -249,3 +249,17 @@ console.log(dogName);
 console.log(adventurer.someNonExistentMethod?.());
 // Expected output: undefined
 ```
+## Nullable Types
+
+Nullable types allow variables to have either a specific type or **`null`** as a value. Nullable types help prevent runtime errors by making it clear that certain variables can potentially be **`null`** and need to be handled accordingly.
+
+```tsx
+// nullable types
+  const search = (val: string | null) => {
+    val ? console.log("Searching") : console.log("Nothing");
+  };
+  
+  search(null);
+```
+
+##
