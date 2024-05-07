@@ -262,4 +262,21 @@ Nullable types allow variables to have either a specific type or **`null`** as a
   search(null);
 ```
 
-##
+## Unknown type
+
+**Unknown** is the **type-safe counterpart** of **any** . Anything is assignable to unknown , but unknown isn't assignable to anything but itself and any without a type assertion or a control flow based narrowing. Likewise, no operations are permitted on an unknown without first asserting or narrowing to a more specific type
+
+```tsx
+// Unknown type
+  const gerSpeed = (val: unknown) => {
+    if (typeof val === "number") {
+      return val * 1000;
+    }
+    if (typeof val === 'string') {
+        return val.split(" ")[0]
+    }
+  };
+
+  console.log(gerSpeed('1000 km/h2' ));
+```
+
