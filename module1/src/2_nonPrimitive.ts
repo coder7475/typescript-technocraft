@@ -17,26 +17,3 @@ let cord: [number, number] = [1, 4];
 let cord2: [number, string] = [1, "4", 44];
 let ageName: [number, string] = [34, "Robiul"];
 
-// 3. Object
-// Implicit
-const user = {
-    firstName: "Robiul",
-    middleName: "Hossain",
-    lastName: "Chy"
-}
-// Explicit
-let user2: {
-    // readonly 
-    readonly company: "Monster Studio"; // type ===> Literal Type
-    firstName: string;
-    middleName?: string; // Optional Type
-    lastName: string;
-} = {
-    company: "Monster Studio",
-    firstName: "Robiul",
-    lastName: "Chy"
-};
-
-user2.middleName = "Hossain";
-console.log(user2);
-// user2.company = "ddda"
