@@ -22,6 +22,9 @@ let user2: {
   isMarried: false
 };
 
+user.lastName = "Fahad";
+console.log(user);
+
 user2.middleName = "Hossain";
 console.log(user2);
 // user2.company = "ddda"
