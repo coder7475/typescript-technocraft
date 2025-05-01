@@ -1,3 +1,3 @@
 "use strict";
-const course = "Hello World";
+const course = "Hello PH Level 2";
 console.log(course);

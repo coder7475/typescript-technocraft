@@ -1,3 +1,3 @@
-const course: string = "Hello World";
+const course: string = "Hello PH Level 2";
 
 console.log(course);
