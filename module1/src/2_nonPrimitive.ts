@@ -1,10 +1,12 @@
-// Non Primitve Types
+// Non Primitve Data Types
+//
 // 1. Array
-// implicit
+// implicit array
 let friends = ["saif", "niaj", 4];
-// explicit
-let collegues: string[] = ["saif"]; // only accept string 
-let nums: number[] = [5, 443]; // only accetps number
+
+// explicit array
+let collegues: string[] = ["saif", "fahad"]; // only accept string 
+let nums: number[] = [5, 443, "mamun"];      // only accetps number
 let mix: (number | string)[] = ["niaj", 55]; // accepts both string and number
 
 /**
@@ -12,6 +14,8 @@ let mix: (number | string)[] = ["niaj", 55]; // accepts both string and number
  * * Limit count and type 
  */
 let cord: [number, number] = [1, 4];
+let cord2: [number, string] = [1, "4", 44];
+let ageName: [number, string] = [34, "Robiul"];
 
 // 3. Object
 // Implicit
@@ -30,7 +34,7 @@ let user2: {
 } = {
     company: "Monster Studio",
     firstName: "Robiul",
-    lastName: "Chy" 
+    lastName: "Chy"
 };
 
 user2.middleName = "Hossain";
