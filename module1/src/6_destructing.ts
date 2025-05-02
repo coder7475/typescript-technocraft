@@ -1,7 +1,8 @@
 // Destructuring
 
-// Object destructuring
 {
+
+    // Object destructuring
     const usr = {
         id: 34,
         name: {
@@ -15,6 +16,7 @@
 
     const { constactNO, name: { middleName: aliasName } } = usr;
     console.log(aliasName);
+    console.log(constactNO);
 
 
     // array descrtucturing
