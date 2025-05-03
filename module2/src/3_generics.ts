@@ -38,7 +38,7 @@
 
     console.log(manus);
 
-    const userWithId = [12, { name: "l" }]
+    const userWithId: GenTuple<number, { name: string }> = [12, { name: "l" }]
     console.log(userWithId);
 
     //
