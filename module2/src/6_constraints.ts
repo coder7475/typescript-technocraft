@@ -24,5 +24,19 @@
   // const result2 = addCourseToStudent({ emni: '' });
 
   console.log(result);
+
+  // Generic constraint with keyof operator
+  type Vehicle = {
+    bike: string;
+    car: string;
+    ship: string;
+  }
+
+  type Owner = keyof Vehicle;
+
+  const useVehicle: Owner = "bike"
+
+  console.log(useVehicle);
+
   //---------------------
 }
