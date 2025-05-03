@@ -33,6 +33,6 @@ let x: number;
 let y: any;
 
 x = 123
-x = 'ddd'
+// x = 'ddd'
 y = 123;
 y = 'xxx'

@@ -23,6 +23,6 @@ let sym = Symbol();
 let x;
 let y;
 x = 123;
-x = 'ddd';
+// x = 'ddd'
 y = 123;
 y = 'xxx';
