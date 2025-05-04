@@ -1,4 +1,12 @@
 {
+  // fetch todos from jsonplaceholders
+  const getTodos = async () => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+    const data = await response.json();
+    console.log(data);
+  }
+  getTodos();
+
   // promise
   const createPromise = (): Promise<string> => {
     // return a new promise
