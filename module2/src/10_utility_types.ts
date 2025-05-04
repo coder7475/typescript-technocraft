@@ -17,5 +17,8 @@
   // required utility
   type RequiredPerson = Required<Person>; // type has all properties as required
 
+  // partial utility
+  type PartialPerson = Partial<Person>; // type has all properties as optional
+
   //
 }
