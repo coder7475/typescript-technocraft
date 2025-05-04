@@ -31,5 +31,10 @@
     b: "bb",
     v: "v",
   }
+
+  // for empty object
+  const emptyObj: Record<string, unknown> = {} // record for empty object
+
+
   //
 }
