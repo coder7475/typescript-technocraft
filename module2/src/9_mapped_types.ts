@@ -14,12 +14,26 @@
     height: number;
     width: number;
   }
+  type Height = AreaNumber['height'];
+  type Width = AreaNumber['width'];
+
   // mapping types of AreaNumber to string
   type AreaString = {
     [key in keyof AreaNumber]: string;
   }
 
+  // Height and Width are now strings
+  // Generic Mapped types
+  type Area<T> = {
+    [key in keyof T]: T[key];
+  }
 
+  const area: Area<AreaNumber> = {
+    height: 10,
+    width: 20,
+  }
+
+  console.log(area);
 
   //
 }
