@@ -1,7 +1,7 @@
 {
   //
   // Utility Types
-  // Pick Types
+  // Pick utility
   type Person = {
     name: string;
     age: number;
@@ -11,9 +11,11 @@
 
   type NameAge = Pick<Person, 'name' | 'age'>; // type has only name and age types
 
-  // Omit Types
+  // Omit utility
   type ContanctInfo = Omit<Person, 'name' | 'age'>; // type has only email and phone types
 
+  // required utility
+  type RequiredPerson = Required<Person>; // type has all properties as required
 
   //
 }
