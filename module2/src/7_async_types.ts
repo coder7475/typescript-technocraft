@@ -1,8 +1,8 @@
 {
   // promise
-  const createPromise = () => {
-    // return 
-    return new Promise((resolve, reject) => {
+  const createPromise = (): Promise<string> => {
+    // return a new promise
+    return new Promise<string>((resolve, reject) => {
       const data: string = 'hello promise';
 
       if (data) {
