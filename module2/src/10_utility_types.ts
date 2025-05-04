@@ -23,5 +23,13 @@
   // read only
   type ReadOnlyPerson = Readonly<Person>; // type has all properties as read only
 
+  //  record utility
+  type MyObj = Record<string, string>; // type has all properties as string
+
+  const obj: MyObj = {
+    a: "aa",
+    b: "bb",
+    v: "v",
+  }
   //
 }
