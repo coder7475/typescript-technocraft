@@ -20,5 +20,8 @@
   // partial utility
   type PartialPerson = Partial<Person>; // type has all properties as optional
 
+  // read only
+  type ReadOnlyPerson = Readonly<Person>; // type has all properties as read only
+
   //
 }
