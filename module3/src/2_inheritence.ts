@@ -12,7 +12,7 @@
   }
   // crete teacher class inheriting properties and methods from Student class
   class Teacher extends Student {
-    constructor(public name: string, public age: number, public address: string) {
+    constructor(public name: string, public age: number, public address: string, public designation: string) {
       super(name, age, address)
     }
     // new mehtod
@@ -24,7 +24,8 @@
   const student1 = new Student('asif', 30, 'Dhaka')
   student1.getSleep(5)
 
-  const teacher1 = new Teacher('Tarek', 34, 'Chittagong')
+  const teacher1 = new Teacher('Tarek', 34, 'Chittagong', 'Math Teacher')
+  console.log(teacher1)
   teacher1.getSleep(7)
   teacher1.takeClass(3)
   //
