@@ -5,16 +5,16 @@
     constructor(
       readonly id: string,
       protected name: string,
-      private balance: number) {
+      private _balance: number) {
       //
     }
     // method
     addDeposit(amount: number) {
-      this.balance = this.balance + amount
+      this._balance = this._balance + amount
     }
-
-    getBalance() {
-      return this.balance
+    // getter
+    get balance() {
+      return this._balance
     }
   }
 
@@ -33,5 +33,9 @@
 
   const s1 = new StudentAcc('222', 'sifat', 43);
   console.log(s1)
+
+  // getter
+  const res = s1.balance;
+  console.log(res)
   //
 }
