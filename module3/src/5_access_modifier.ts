@@ -16,6 +16,12 @@
     get balance() {
       return this._balance
     }
+
+    // setter
+    set deposit(amount: number) {
+      this._balance = this._balance + amount
+    }
+
   }
 
   // child class
@@ -37,5 +43,10 @@
   // getter
   const res = s1.balance;
   console.log(res)
+
+  // setter
+  s1.deposit = 1;
+
+  console.log(s1)
   //
 }
