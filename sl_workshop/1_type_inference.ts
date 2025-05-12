@@ -9,4 +9,12 @@
   console.log(typeof name);
   console.log(typeof arr);
 
+  // inference in function
+  function add(a: number, b: number) {
+    return a + b; // Return type inferred as 'number'
+  }
+
+  const result = add(5, 10); // 'result' is inferred as 'number'
+
+  // console.log(result.toUpperCase()); // Error: Property 'toUpperCase' does not exist on type 'number'
 }
