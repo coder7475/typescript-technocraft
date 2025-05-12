@@ -43,4 +43,24 @@
   const nums = [1, 2, 3, 5, 6];
 
   const doubleNums = nums.map(num => num * 2); // num is inferred as number
+
+  // without inference
+  function validateForm(formData: { email: string; age: number; isAdmin: boolean }): boolean {
+    const email: string = formData.email;
+    const age: number = formData.age;
+    const isAdmin: boolean = formData.isAdmin;
+
+    if (email.includes("@") && age > 18) {
+      return true;
+    }
+    return false;
+  }
+
+  // with inference 
+  function validateForm2(formData: { email: string; age: number; isAdmin: boolean }) {
+    // TypeScript infers the types of `email`, `age`, and `isAdmin`
+    const { email, age, isAdmin } = formData;
+
+    return email.includes("@") && age > 18;
+  }
 }
