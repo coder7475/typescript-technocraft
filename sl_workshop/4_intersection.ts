@@ -27,5 +27,21 @@
     balance: 3331,
   };
 
+  // React example
+  type BaseProps = {
+    id: string;
+    className?: string;
+  };
+
+  type ButtonProps = BaseProps & {
+    label: string;
+    onClick: () => void;
+  };
+
+  type InputProps = BaseProps & {
+    value: string;
+    OnChange: (value: string) => void;
+  };
+
   ///
 }
