@@ -32,6 +32,16 @@
   };
 
   console.log(numberBox);
+  // more used for object
+  type User = {
+    id: number;
+    name: string;
+    skills: string[];
+  };
+
+  const userBox: MysteryBox<User | null> = { value: null };
+
+  console.log(userBox);
   ///
 
   ///
