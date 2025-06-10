@@ -1,6 +1,6 @@
 {
-  // Type Inference -  typescript can infer based on value assigned 
-  let name = 'Alice'; // TypeScript infers string
+  // Type Inference -  typescript can infer based on value assigned
+  let name = "Alice"; // TypeScript infers string
   const arr = [23, 23, 24, 55];
 
   //  name = 34 // typescript shows error as number is not assignable to string type name
@@ -42,10 +42,14 @@
   // **Contextual Typing in Callback:** TypeScript infers the type of callback parameters based on context.
   const nums = [1, 2, 3, 5, 6];
 
-  const doubleNums = nums.map(num => num * 2); // num is inferred as number
+  const doubleNums = nums.map((num) => num * 2); // num is inferred as number
 
   // without inference
-  function validateForm(formData: { email: string; age: number; isAdmin: boolean }): boolean {
+  function validateForm(formData: {
+    email: string;
+    age: number;
+    isAdmin: boolean;
+  }): boolean {
     const email: string = formData.email;
     const age: number = formData.age;
     const isAdmin: boolean = formData.isAdmin;
@@ -56,11 +60,17 @@
     return false;
   }
 
-  // with inference 
-  function validateForm2(formData: { email: string; age: number; isAdmin: boolean }) {
+  // with inference
+  function validateForm2(formData: {
+    email: string;
+    age: number;
+    isAdmin: boolean;
+  }) {
     // TypeScript infers the types of `email`, `age`, and `isAdmin`
     const { email, age, isAdmin } = formData;
 
     return email.includes("@") && age > 18;
   }
+
+  //
 }
