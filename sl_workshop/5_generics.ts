@@ -21,6 +21,17 @@
 
   const merge = mergeObjects({ a: 1 }, { b: 2 });
   console.log(merge);
+
+  // usecase 2
+  type MysteryBox<T> = {
+    value: T;
+  };
+
+  const numberBox: MysteryBox<number> = {
+    value: 123,
+  };
+
+  console.log(numberBox);
   ///
 
   ///
