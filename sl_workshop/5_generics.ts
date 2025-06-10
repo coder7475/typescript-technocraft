@@ -42,6 +42,24 @@
   const userBox: MysteryBox<User | null> = { value: null };
 
   console.log(userBox);
+
+  // case 3
+  type ApiResponse<T> = {
+    data: T;
+    status: number;
+    message: string;
+  };
+
+  async function fetchUser(): Promise<ApiResponse<User>> {
+    const response = await fetch("https://api.jsonplaceholder.com/users");
+    const data = await response.json();
+
+    return {
+      data,
+      status: response.status,
+      message: response.statusText,
+    };
+  }
   ///
 
   ///
