@@ -24,5 +24,26 @@
     }
   }
 
+  // Error Response
+  type ErrorResponse = {
+    error: true;
+    message: string;
+  };
+
+  type SuccessResponse = {
+    error: false;
+    message: string;
+  };
+
+  type ApiResponse = ErrorResponse | SuccessResponse;
+
+  function handleRespone(response: ApiResponse) {
+    if (response.error) {
+      console.log(response.message);
+    } else {
+      console.log(response.message);
+    }
+  }
+
   ////
 }
