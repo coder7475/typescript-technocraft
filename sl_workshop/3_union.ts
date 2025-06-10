@@ -33,6 +33,7 @@
   type SuccessResponse = {
     error: false;
     message: string;
+    data: object;
   };
 
   type ApiResponse = ErrorResponse | SuccessResponse;
@@ -42,6 +43,7 @@
       console.log(response.message);
     } else {
       console.log(response.message);
+      console.log(response.data);
     }
   }
 
