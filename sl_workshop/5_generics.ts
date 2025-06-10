@@ -60,6 +60,21 @@
       message: response.statusText,
     };
   }
+
+  // generics for all similiar type of fetchUser , fetchProduct etcc
+
+  const fetchData = async <T>(url: string): Promise<ApiResponse<T>> => {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    return {
+      data,
+      status: response.status,
+      message: response.statusText,
+    };
+  };
+
+  console.log(fetchData("https://api.jsonplaceholder.com/comments"));
   ///
 
   ///
